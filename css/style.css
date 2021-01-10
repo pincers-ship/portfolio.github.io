@@ -1,0 +1,142 @@
+/* ページ全体 */
+*
+{
+    margin:0;
+    padding:0;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+#clear
+{
+    clear: both;
+}
+
+#menu
+{
+    background-color: white;
+    height:30px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+}
+
+#menu ul,li
+{
+    box-sizing: border-box;
+}
+
+#menu ul
+{
+    display:inline-block;
+    width:100%;
+}
+
+#menu ul li
+{
+    float: left;
+    width:25%;
+    line-height: 30px;
+    text-align: center;
+}
+
+#menu ul li + li
+{
+    border-left: solid 1px black;
+}
+
+#menu ul li a
+{
+    color:black;
+}
+
+#none
+{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#frame
+{
+    padding:2%;
+}
+
+.main
+{
+    width:100%;
+    background-image: url("../image/background_00012.jpg");
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 769px)
+{
+    #menu ul
+    {
+        border-bottom: solid 1px black;
+    }
+
+    #menu ul li a
+    {
+        transition: 0.5s;
+        display: block;
+    }
+
+    #menu ul li a:hover
+    {
+        background-color: blue;
+        color:white;
+    }
+
+    .main
+    {
+        top:30px;
+    }
+
+    .end1
+    {
+        margin-left: 17%;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #menu
+    {
+        bottom: 0;
+    }
+
+    #menu ul li
+    {
+        border-top: solid 1px black;
+    }
+
+    .main
+    {
+        padding-bottom: 30px;
+    }
+
+    .end2
+    {
+        margin-left: 25%;
+    }
+}
