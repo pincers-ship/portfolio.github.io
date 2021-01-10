@@ -1,0 +1,372 @@
+/* index.html */
+#welcome
+{
+    position: absolute;
+    width:100%;
+    height: calc(100% - 30px);
+}
+
+#hello
+{
+    height: 100%;
+    width:100%;
+    background-color: black;
+    position: relative;
+}
+
+#homeimage
+{
+    height: 100%;
+    width:100%;
+    background-color: black;
+    position: absolute;
+}
+
+.animation
+{
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    
+    transform: translate(-50%, -50%);
+
+    animation-duration:10s;
+    animation-timing-function:ease;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+.h
+{
+    top:10%;
+    left:10%;
+    animation-name:h;
+}
+
+.e
+{
+    top:90%;
+    left:30%;
+    animation-name:e;
+}
+
+.l1
+{
+    top:10%;
+    left:50%;
+    animation-name:l1;
+}
+
+.l2
+{
+    top:90%;
+    left:70%;
+    animation-name:l2;
+}
+
+.o
+{
+    top:10%;
+    left:90%;
+    animation-name:o;
+}
+
+
+@keyframes h
+{
+    0%,10%
+    {
+        top:10%;
+        left: 10%;
+    }
+
+    15%,25%
+    {
+        top:90%;
+        left:10%;
+    }
+
+    30%,40%
+    {
+        top:10%;
+        left:90%;
+    }
+
+    45%,55%
+    {
+        top:10%;
+        left:30%;
+    }
+    
+    60%,70%
+    {
+        top:50%;
+        left:70%;
+    }
+
+    75%,85%
+    {
+        top:50%;
+        left:30%;
+        opacity: 1;
+    }
+
+    90%,100%
+    {
+        top:50%;
+        left:30%;
+        opacity: 0;
+    }
+}
+
+@keyframes e
+{
+    0%,10%
+    {
+        top:90%;
+        left:30%;
+    }
+
+    15%,25%
+    {
+        top:10%;
+        left:30%;
+    }
+
+    30%,40%
+    {
+        top:90%;
+        left:70%;
+    }
+
+    45%,55%
+    {
+        top:30%;
+        left:40%;
+    }
+    
+    60%,70%
+    {
+        top:50%;
+        left:60%;
+    }
+
+    75%,85%
+    {
+        top:50%;
+        left:40%;
+        opacity: 1;
+    }
+
+    90%,100%
+    {
+        top:50%;
+        left:40%;
+        opacity: 0;
+    }
+}
+
+@keyframes l1
+{
+    0%,10%
+    {
+        top:10%;
+        left: 50%;
+    }
+
+    15%,25%
+    {
+        top:90%;
+        left:50%;
+    }
+
+    30%,40%
+    {
+        top:10%;
+        left:50%;
+    }
+
+    45%,85%
+    {
+        top:50%;
+        left:50%;
+        opacity: 1;
+    }
+
+    90%,100%
+    {
+        top:50%;
+        left:50%;
+        opacity: 0;
+    }
+}
+
+@keyframes l2
+{
+    0%,10%
+    {
+        top:90%;
+        left: 70%;
+    }
+
+    15%,25%
+    {
+        top:10%;
+        left:70%;
+    }
+
+    30%,40%
+    {
+        top:90%;
+        left:30%;
+    }
+
+    45%,55%
+    {
+        top:70%;
+        left:60%;
+    }
+    
+    60%,70%
+    {
+        top:50%;
+        left:40%;
+    }
+
+    75%,85%
+    {
+        top:50%;
+        left:60%;
+        opacity: 1;
+    }
+
+    90%,100%
+    {
+        top:50%;
+        left:60%;
+        opacity: 0;
+    }
+}
+
+@keyframes o
+{
+    0%,10%
+    {
+        top:10%;
+        left: 90%;
+    }
+
+    15%,25%
+    {
+        top:90%;
+        left:90%;
+    }
+
+    30%,40%
+    {
+        top:10%;
+        left:10%;
+    }
+
+    45%,55%
+    {
+        top:90%;
+        left:70%;
+    }
+    
+    60%,70%
+    {
+        top:50%;
+        left:30%;
+    }
+
+    75%,85%
+    {
+        top:50%;
+        left:70%;
+        opacity: 1;
+    }
+
+    90%,100%
+    {
+        top:50%;
+        left:70%;
+        opacity: 0;
+    }
+}
+
+#homeimage
+{
+    background-image: url("../image/night-view-790053_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation-name: homeimage;
+    animation-duration:10s;
+    animation-timing-function:ease;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes homeimage
+{
+    0%,85%
+    {
+        opacity: 0;
+    }
+
+    90%,100%
+    {
+        opacity: 1;
+    }
+}
+
+#homeimage::before
+{
+    content: ' ';
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#homeimage #word h1
+{
+    position: absolute;
+    color:white;
+    width:100%;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media screen and (min-width: 769px)
+{
+    #welcome
+    {
+        top:30px;
+    }
+
+    #homeimage
+    {
+        top:0px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #welcome
+    {
+        top:0;
+    }
+
+    #homeimage
+    {
+        top:0px;
+    }
+}
