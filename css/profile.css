@@ -1,0 +1,204 @@
+/* profile.html */
+.boxes
+{
+    opacity: 0;
+    color:white;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.boxes h1
+{
+    text-align: center;
+}
+
+.box2
+{
+    border-radius: 20px;
+}
+
+.box2 li
+{
+    font-size: 24px;
+}
+
+.box1
+{
+}
+
+.box1 img
+{
+    padding:10px 0;
+    width: 200px;
+}
+
+.box1
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#logo
+{
+    animation-name: logo;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
+@keyframes logo
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+#news
+{
+    overflow-y: scroll;
+    border:1px solid white;
+    border-radius: 10px;
+    padding:10px;
+    max-height:300px;
+}
+
+.box3
+{
+    text-align: center;
+    overflow: hidden; 
+}
+
+.box3 h1
+{
+    margin-bottom: 20px;
+}
+
+#frame
+{
+    display: inline-block;
+}
+
+@media screen and (min-width: 769px)
+{
+    .boxes h1
+    {
+        font-size: 48px;
+    }
+
+    .box3 ul li
+    {
+        float: left;
+        width:33%;
+        height:200px;
+    }
+
+    .box3
+    {
+        margin:10px 10px 0 10px;
+    }
+    
+    .box3 img
+    {
+        width:200px;
+        height:100%;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .box2,.box3
+    {
+        max-width: 1000px;
+        height:auto;
+        margin:20px auto;
+    }
+
+    .box3
+    {
+        overflow: hidden; 
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .boxes h1
+    {
+        font-size: 32px;
+    }
+
+    .box2
+    {
+        width:90%;
+        margin:10px 5% 0 5%;
+    }
+
+    .box3
+    {
+        width:100%;
+    }
+
+    .box3 ul li
+    {
+        float: left;
+        width:50%;
+        height:200px;
+        margin: 10px auto;
+    }
+
+    
+    .box3 img
+    {
+        width:200px;
+        height:100%;
+    }
+
+    .phplogo img,.jquerylogo img
+    {
+        width:250px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .boxes h1
+    {
+        font-size: 32px;
+    }
+
+    .box2
+    {
+        width:95%;
+        margin:10px 2.5% 0 2.5%;
+    }
+    .box3 ul li
+    {
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+    }
+
+    .box3 ul li + li
+    {
+        margin-top: 10px;
+    }
+    
+    .box3 img
+    {
+        width:150px;
+    }
+
+    .phplogo img,.jquerylogo img
+    {
+        width:250px;
+    }
+
+    .box3 ul li:nth-child(5)
+    {
+        margin-left: 5%;
+    }
+}
